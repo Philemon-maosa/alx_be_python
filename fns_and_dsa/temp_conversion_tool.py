@@ -12,9 +12,9 @@ try:
 temp_input = input("Enter the temperature to convert:")
 temperature = float(temp_input)
 
-unit = input("Is this the temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
+unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
 
-unit = input("Is this the temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
+unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
 
     # Check the unit and call appropriate function
     if unit == "C":
