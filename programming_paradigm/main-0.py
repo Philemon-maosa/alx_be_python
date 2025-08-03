@@ -5,12 +5,12 @@ def main():
     account = BankAccount(100)  # Example starting balance
 
     if len(sys.argv) < 2:
-        print("Usage: python main.py <command>:<amount>")
+        print(f"Usage: python {sys.argv[0]} <command>:<amount>")
         print("Commands: deposit, withdraw, display")
         sys.exit(1)
 
     command, *params = sys.argv[1].split(':')
-    
+
     amount = None
     if command in ["deposit", "withdraw"]:
         try:
