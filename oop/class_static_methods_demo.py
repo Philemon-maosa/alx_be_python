@@ -1,16 +1,22 @@
 class Calculator:
-  calculation_type ' "Arithmetic Operations"
+    # Correct class attribute definition
+    calculation_type = "Arithmetic Operations"
 
-@staticmethod
-     def add(a,b):
-         return a + b
+    @staticmethod
+    def add(a, b):
+        """Return the sum of two numbers."""
+        return a + b
+
+    @classmethod
+    def multiply(cls, a, b):
+        
+        print(f"Calculation type: {cls.calculation_type}")
+        return a * b
 
 
- @classmethod
-     def multiply(cls, a, b):
-	 print(f" Calculation Type: {cls.calculation_Type}")
-         return a * b
+# Example usage:
+sum_result = Calculator.add(10, 5)
+print(f"The sum is: {sum_result}")
 
-print(Calculator.add(10,5))
-print(Calculator.multiply(4,3))
-	 
+product_result = Calculator.multiply(10, 5)
+print(f"The product is: {product_result}")
