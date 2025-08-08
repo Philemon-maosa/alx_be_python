@@ -13,6 +13,7 @@ class Book:
     def __del__(self):
         print(f"Deleting {self.title}")
 
+# This should only be run once
 book = Book("1984", "George Orwell", 1949)
 print(book)
 print(repr(book))
